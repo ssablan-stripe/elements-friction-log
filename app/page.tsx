@@ -9,7 +9,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { db } from "@/db";
-import { Wheat } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -30,7 +30,6 @@ export default function CheckoutForm() {
 
   const handleSubmit = async (e: FormEvent | StripeExpressCheckoutElementConfirmEvent) => {
     if (e instanceof FormDataEvent) {
-      console.log("FORM DATA EVENT")
       e.preventDefault();
     }
 

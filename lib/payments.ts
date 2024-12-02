@@ -25,7 +25,6 @@ export async function createPaymentIntent({
 }: {
   items: ItemMap;
 }): Promise<{ clientSecret: string } | void> {
-  console.log("PAYMENT_INTENT")
   try {
     const paymentIntent = await stripe.paymentIntents.create({
       amount: calculateOrderAmount({ items }),
